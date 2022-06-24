@@ -1,8 +1,63 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-A:link {color: gray}
-A:visited, A:active {color: green}
-A:hover {text-decoration: overline; color: teal}
-	
+A:visited, A:active {color: rgb(255, 255, 255)}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #A1CF70;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: normal;
+}
+
+   /* NAVBAR MENU */
+.menu {
+	display: flex;
+	gap: 1em;
+	font-size: 16px;
+	font-weight: 550;
+}
+.menu li {
+	padding: 5px 20px;
+}
+
+
+.navLogo {
+   display: inline-block;
+   vertical-align: top;
+   width: 100px;
+   height: auto;
+   margin-right: 20px;
+}
+
+.navLink {
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+.navLink:hover {
+    color: #024A2E;
+	font-weight: 580;
+}
+
+
+
 Body {
 	background-color: white;
 	font-family: cambria;
