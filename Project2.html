@@ -45,27 +45,23 @@
 		</div>
 	</div>
 
-	<BR><BR> 
-	<BR><BR>
-	<BR><BR>
-	<BR><BR> 
-	<BR><BR> 
-
-
 
     <!-- RESERVATIONS SECTION -->
-	<a name="res"><H2>RESERVATIONS</H2>
-	<H5>Book a Table!</H5>
-	<Form method="post" action="http://facstaff.cbu.edu/dbrandon/echo.php">
-	<BR><BR>
-		First and Last Name: <input type="text" size=40 name="Name">
+	<br><br><br><br>
+	<Form class="regestrationForm" method="post" action="http://facstaff.cbu.edu/dbrandon/echo.php">
+		<a><H2 id="res">RESERVATIONS</H2>
+		<H5 id="resSubHead">Book a Table!</H5>
+
 		<BR><BR>
-		Date(ex. 05/25/20): <input type="text" size=20 name="Date">
-		Time(ex. 09:30PM): <input type="text" size=20 name="Time">
-	<BR><BR>
-		<input type="submit" name="submit" value="submit">
-		<input type="reset" name="reset" value="reset">
-	<BR><BR>
+		Name <br> <input class="resInput" type="text" name="Name" placeholder="Full name...">
+		<BR>
+		Date <br> <input class="resInput" type="date" name="Date">
+		<BR>
+		Time <br> <input class="resInput" type="time" name="Time">
+		<BR><BR><br>
+		<input class="resButton reset" type="reset" name="reset" value="reset">
+		<input class="resButton submit" type="submit" name="submit" value="submit">
+		<BR><BR>
 	</Form>
 	
 	<BR>
