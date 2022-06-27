@@ -15,12 +15,11 @@
 	HRef= "ExternalStyle2.css">
 </head>
 
-
 <body><EM>
 
-    <!-- NAVIGATION BAR -->
+    <!---------- NAVIGATION BAR ---------->
 	<nav class="navBar">
-		<img class="navLogo" src="logo.png" vspace=5>
+		<img class="logo" src="logo.png" vspace=5>
 		<!-- MENU -->
 		<ul class="navLinks">
 		  <!-- ITEMS -->
@@ -35,8 +34,7 @@
 	  </nav>
 
 
-
-
+	<!---------- WELCOME SECTION ---------->
 	<div class="heroBack">
 		<div class="heroText">
 			<h1 id="introText">Farm to Fork</h1>
@@ -47,21 +45,21 @@
 	</div>
 
 
-    <!-- RESERVATIONS SECTION -->
+    <!---------- RESERVATIONS SECTION ---------->
 	<br><br><br><br>
-	<Form class="regestrationForm" method="post" action="http://facstaff.cbu.edu/dbrandon/echo.php">
-		<a><H2 id="res">RESERVATIONS</H2>
-		<H5 id="resSubHead">Book a Table!</H5>
+	<Form class="FTF-Form" method="post" action="http://facstaff.cbu.edu/dbrandon/echo.php">
+		<a><H2 class="formTitle">RESERVATIONS</H2>
+		<H5 class="formSubhead">Book a Table!</H5>
 
 		<BR><BR>
-		Name <br> <input class="resInput" type="text" name="Name" placeholder="Full name...">
+		Name <br> <input class="formInput" type="text" name="Name" placeholder="Full name...">
 		<BR>
-		Date <br> <input class="resInput" type="date" name="Date">
+		Date <br> <input class="formInput" type="date" name="Date">
 		<BR>
-		Time <br> <input class="resInput" type="time" name="Time">
+		Time <br> <input class="formInput" type="time" name="Time">
 		<BR><BR><br>
-		<input class="resButton reset" type="reset" name="reset" value="reset">
-		<input class="resButton submit" type="submit" name="submit" value="submit">
+		<input class="formButton reset" type="reset" name="reset" value="reset">
+		<input class="formButton submit" type="submit" name="submit" value="submit">
 		<BR><BR>
 	</Form>
 	
@@ -70,7 +68,7 @@
 	<BR> 
 	
 
-    <!-- REVIEWS SECTION -->
+    <!---------- REVIEWS SECTION ---------->
 	<a name="rev"></a>
 	<div class="reviewsHero">
 		<section id="testimonials">
@@ -96,7 +94,7 @@
 			<div class="testimonialBoxContainer">
 				<div class="testimonialBox">
 					<div class="clientComment">
-						<p>"Fight global warming, labor exploitation, food deserts, and so much more!"- Victor</p>
+						<p>"Fight global warming, labor exploitation, food deserts, and so much more!" - Victor</p>
 					</div>
 				</div>
 			</div>			
@@ -108,41 +106,38 @@
 				</div>
 			</div>		
 		</section>
-
 	</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+	<!---------- LEAVE A REVIEW SECTION ---------->
+	<BR><BR><BR>
+	<Form class="FTF-Form" method="post" action="http://facstaff.cbu.edu/dbrandon/echo.php">
+		<H5 class="formSubhead">Share your Farm to Fork Experience!</H5>
 	<BR>
-	
-	<H5>Share your Farm to Fork Experience!</H5>
-	<Form method="post" action="http://facstaff.cbu.edu/dbrandon/echo.php">
+		First Name: <BR> <input class="formInput" type="text" size=20 name="Name">
+		<BR> Date of Visit: <BR> <input class="formInput" type="date" size=20 name="Visit">
+		<BR>
+		Comments: <BR> 
+		<textarea class="commentsBox"></textarea>
 	<BR><BR>
-		First Name: <input type="text" size=20 name="Name">
-		Date of Visit: <input type="text" size=20 name="Visit">
-		<BR><BR>
-		Comments: <input type="text" size=65 name="Review">
-	<BR><BR>
-		<input type="submit" name="submit" value="submit">
-		<input type="reset" name="reset" value="reset">
-	<BR><BR>
+		<input class="formButton reset" type="reset" name="reset" value="reset">
+		<input class="formButton submit" type="submit" name="submit" value="submit">
+	<BR><BR><BR><BR>
 	</Form>
 	
-	<H2>
-	<a href="http://stu.cbu.edu/~nmutasa/Project2.html">HOME</a>
-	</H2>
-	<H4>A Sustainable, Fine Dining Experience.</H4>
+
+	<!---------- FOOTER ---------->
+	<footer class="footer">
+		<ul>
+			<div class="footerList">
+			  <li></li>
+			  <li><a class="footerLink" href="About.html">ABOUT</a></li>
+			  <li><a class="footerLink" href="Contact.html">CONTACT</a></li>
+			</div>
+		</ul>
+		<H4 class="footerLine">A Sustainable, Fine Dining Experience.</H4>
+		<img class="logoFooter" src="logo.png" vspace=5>
+	</footer>
 
 </EM></body>
 </HTML>
