@@ -117,7 +117,7 @@ li {
 }
 .formInput{
 	width: 20%;
-  	padding: 8px 20px;
+  	padding: 8px 20px;	
   	margin: 8px 0;
  	box-sizing: border-box;
 	border-radius: 25px;
@@ -170,7 +170,6 @@ li {
 	background-image: url("kayleigh-harrington-yhn4okt6ci0-unsplash.jpg");
 	height: 650px;
 	border-top: solid 3px black;
-	background-position-y: -750px;
 	background-size: cover;
 	border-bottom: solid 3px black;
 
@@ -216,14 +215,13 @@ li {
     flex-wrap: wrap;
 }
 .testimonialBox{
-    width:500px;
 	box-shadow: 1px 7px 15px rgb(0, 0, 0);
     background-color: #ffffff;
     padding: 17px;
     margin: 20px;
 }
 .clientComment p{
-    font-size: 0.95rem;
+    font-size: 0.95em;
 	font-weight: 300;
 	font-style: italic;
     color: #000000;
@@ -260,6 +258,14 @@ li {
 }
 
 /* ---------- ABOUT US PAGE ---------- */
+.pageTitle {
+	margin-top: 40px;
+	margin-left: 40px;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+}
+
 .aboutBody{
 	background-color: white;
 }
@@ -270,11 +276,11 @@ li {
 }
 #aboutTitle{
 	grid-column-start: 2;
-	grid-column-end: 4;
+	grid-column-end: 5;
 }
 #aboutSubHead{
 	grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column-end: 4;
 	margin-left: 60px;
 	margin-top: 45px;
 	font-size: 18px;
@@ -351,18 +357,12 @@ li {
 	grid-row-start: 7;
 }
 
-.pageTitle {
-	margin-top: 40px;
-	margin-left: 40px;
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 400;
-}
+
 
 /* ---------- CONTACT PAGE ---------- */
 #contactLogo{
-	width: 30%;
-	margin-right: 10%;
+	width: 28%;
+	margin-right: 7%;
 }
 .contactBody{
 	background-color: white;
@@ -380,4 +380,103 @@ li {
 #hoursOfOp{
 	margin-top: 5px;
 	margin-left: 15%;
+}
+
+
+
+/* --------------- MEDIA QUERIES --------------- */
+@media only screen and (max-width: 1000px){ 
+	.wrapper{overflow-x: hidden;}
+	#introText{
+		white-space: nowrap;
+	}
+
+}
+
+@media only screen and (max-width: 821px){
+	#homeP{display: none;}
+	#reviewP{display: none;}
+	.navBar{padding: 20px;}
+	#aboutButton{font-size: 17px;}
+	.formTitle{font-size: 33px;}
+	.formSubhead{font-size: 24px;}
+	.formButton{font-size: 16px;}
+	.formInput{font-size: 18px; width: 35%;}
+	.commentsBox{font-size:18px; width: 38%;}
+	.reviewsHero{height: 670px;}
+	.testimonialHeading h1{font-size: 2.2em;}
+	.testimonialHeading span{font-size: 1em;}
+	.clientComment{font-size: 1.3em; text-align: center;}
+	.testimonialBox{width: auto;}
+	/* ABOUT PAGE */
+	.pageTitle{font-size: 35px;}
+	#aboutSubHead{font-size: 16px; margin-left: 53px; white-space: nowrap;}
+	#aboutUsStatement{font-size: 14px; line-height: 18px; margin-left: 53px;}
+	#aboutVegimage{margin-left: 53px;}
+	.moreAboutSH{margin-left: 50px;font-size: 16px; white-space: nowrap;}
+	#aboutExtraP1{margin-left: 50px;font-size: 14px; line-height: 18px;}
+	#aboutExtraP2{margin-left: 50px;font-size: 14px; line-height: 18px;}
+	/* CONTACT PAGE */
+	#contact{margin-left: 40px;}
+	#contactInfo{margin-left: 40px;}
+	#contactLogo{margin-top: -50px; padding-left: 14px;}
+	#hoursOfOp{margin-left: 40px;}
+}
+
+@media only screen and (max-width: 520px){ 
+	.navBar{
+		padding: 15px;
+		justify-content: left;
+	}
+	.menu{font-size: 13px;}
+	.logo{width: 50px;}
+	.heroBack{height: 800px;}
+	#introText{font-size: 50px;}
+	.formInput{width: 50%;}
+	.commentsBox{width: 55%;}
+	.reviewsHero{height: 750px;}
+	/* ABOUT PAGE */
+	#aboutLogo{display: none;}
+	#aboutTitle{grid-column-start: 1;}
+	#aboutUsStatement{grid-column-end: 6; margin-left: 45px;}
+	#aboutSubHead{margin-left: 45px;}
+	#aboutVegImage{display: none;}
+	.moreAboutSH{grid-column-start: 1; white-space: nowrap; margin-left: 45px;}
+	#aboutExtraP1{grid-column-start: 1; margin-left: 45px;}
+	#aboutExtraP2{grid-column-start: 1; margin-left: 45px;}
+	/* CONTACT PAGE */
+	#contactLogo{display: none;}
+	#hoursOfOp{width: auto;}
+	/* FOOTER */
+	.footerLine{display: none;}
+}
+
+@media only screen and (max-width: 380px){ 
+	.navBar{padding: 14px;}
+	.menu{gap: .4em; font-size: 12px;}
+	.logo{display: none;}
+	.heroBack{height: 500px;}
+	.heroText{top: 300px;}
+	#introText{font-size: 40px;}
+	#aboutButton{font-size: 16px;}
+	.formTitle{font-size: 30px;}
+	.formSubhead{font-size: 18px;}
+	.formButton{font-size: 15px;}
+	.formInput{font-size: 14px; width: 60%;}
+	.commentsBox{width: 55%;}
+	.reviewsHero{height: 600px;}
+	.testimonialHeading h1{font-size: 18px;}
+	.testimonialHeading span{font-size: 12px; letter-spacing: normal;}
+	.testimonialBox{padding: 10px;}
+	.clientComment{font-size: 13px;}
+	.footerList li{font-size: 11px;}
+	/* ABOUT PAGE */
+	.pageTitle{font-size: 28px; }
+	#aboutUsStatement{font-size: 13px; margin-left: 37px;}
+	#aboutSubHead{font-size: 14px; margin-left: 37px;}
+	.moreAboutSH{font-size: 14px; margin-left: 37px;}
+	#aboutExtraP1{font-size: 13px; margin-left: 37px;}
+	#aboutExtraP2{font-size: 13px; margin-left: 37px;}
+	/* CONTACT PAGE */
+	#hoursOfOp{margin-left: 20px; margin-right: 20px; width: auto;}
 }
